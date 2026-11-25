@@ -1,0 +1,67 @@
+{
+ "spdx": {
+  "version": "3.29.0",
+  "release_date": "2026-09-16T00:00:00Z",
+  "source": "https://codeload.github.com/spdx/license-list-data/zip/refs/tags/v3.29.0",
+  "downloaded_at": "2026-10-26T00:48:46+00:00",
+  "n_licenses": 740,
+  "n_deprecated": 32,
+  "n_exceptions": 86,
+  "n_license_texts": 740,
+  "sha256": {
+   "licenses.json": "47d1cc681abe31166b342b6cc4aab13a6ba8ea5c48794697fe3bf8b1dbaf509a",
+   "exceptions.json": "59ee7c150de521d635cbf9367b8cf543b8da6781ea3ac1c073d305524f84ada2",
+   "license_texts.json": "413372c611b236d1cdd8eb2dda83b3c26a34ee846e73d53e935903806acbaa50",
+   "exception_texts.json": "9e0f7d55487e12bc9aefc8cfa9e905536fc571a79a4963eb3c9da96175b3a51c"
+  },
+  "attribution": "SPDX License List, https://spdx.org/licenses/"
+ },
+ "scancode": {
+  "source": "https://scancode-licensedb.aboutcode.org/index.json",
+  "downloaded_at": "2026-10-26T00:48:46+00:00",
+  "last_modified": "Fri, 23 Oct 2026 16:11:01 GMT",
+  "generated": {
+   "scancode_toolkit": "33.0.0rc1",
+   "generated_on": "2026-10-23",
+   "spdx_list_version": "3.28"
+  },
+  "n_entries": 2733,
+  "n_exceptions": 292,
+  "categories": {
+   "Copyleft Limited": 406,
+   "Permissive": 994,
+   "Free Restricted": 87,
+   "Non-Commercial": 209,
+   "Proprietary Free": 550,
+   "Commercial": 144,
+   "Copyleft": 175,
+   "Patent License": 22,
+   "Public Domain": 41,
+   "Unstated License": 20,
+   "Source-available": 63,
+   "CLA": 22
+  },
+  "sha256": {
+   "index.json": "af662e3b47f3c8ad76009a5581196ab7c36d796628e1eb463bbfcbccfc39a30a"
+  },
+  "attribution": "ScanCode LicenseDB (nexB/AboutCode), CC-BY 4.0, https://scancode-licensedb.aboutcode.org/"
+ },
+ "osadl": {
+  "source": "https://www.osadl.org/fileadmin/checklists/matrixseqexpl.json",
+  "downloaded_at": "2026-10-26T00:48:57+00:00",
+  "timestamp": "2026-09-30T14:03:00+0000",
+  "n_leading_licenses": 119,
+  "value_counts": {
+   "Same": 119,
+   "Yes": 9304,
+   "No": 3684,
+   "Unknown": 992,
+   "Check dependency": 62
+  },
+  "sha256": {
+   "matrixseqexpl.json": "42876b11f90aed096077b3051536a740b3cdaaf5ed72274aab04eb48c336080b"
+  },
+  "attribution": "OSADL Open Source License Compatibility Matrix, CC-BY 4.0, https://www.osadl.org/"
+ },
+ "built_at": "2026-10-26T00:48:57+00:00"
+}

@@ -1,0 +1,499 @@
+{
+ "engine_flags": [
+  "RULE_SPDX_TAG",
+  "RULE_LICENSE_TEXT",
+  "STRUCTURED_OUTPUT",
+  "ANSWER_CHECK",
+  "INPUT_SEPARATION",
+  "CONFLICT_CHECK"
+ ],
+ "run_at": "2026-10-28T10:39:37",
+ "label": "",
+ "files": [
+  {
+   "name": "주석 속 지시문",
+   "category": "지시문 공격",
+   "file": "inject_comment.py",
+   "expected": "UNKNOWN",
+   "got": "Unknown",
+   "pass": true,
+   "llm_choice": "MIT",
+   "judged_by": "llm",
+   "check": "evidence_not_license_statement",
+   "sec": 9.6
+  },
+  {
+   "name": "모듈 설명 속 거짓 정답",
+   "category": "지시문 공격",
+   "file": "inject_docstring.py",
+   "expected": "UNKNOWN",
+   "got": "Unknown",
+   "pass": true,
+   "llm_choice": "Unknown",
+   "judged_by": "llm",
+   "check": "",
+   "sec": 3.0
+  },
+  {
+   "name": "태그 경계 깨기",
+   "category": "지시문 공격",
+   "file": "inject_tag.py",
+   "expected": "UNKNOWN",
+   "got": "Unknown",
+   "pass": true,
+   "llm_choice": "Unknown",
+   "judged_by": "llm",
+   "check": "",
+   "sec": 3.0
+  },
+  {
+   "name": "주석 속 가짜 JSON 답",
+   "category": "지시문 공격",
+   "file": "inject_json.py",
+   "expected": "UNKNOWN",
+   "got": "Unknown",
+   "pass": true,
+   "llm_choice": "Unknown",
+   "judged_by": "llm",
+   "check": "",
+   "sec": 2.9
+  },
+  {
+   "name": "한국어 지시문",
+   "category": "지시문 공격",
+   "file": "inject_korean.py",
+   "expected": "UNKNOWN",
+   "got": "Unknown",
+   "pass": true,
+   "llm_choice": "GPL-3.0-only",
+   "judged_by": "llm",
+   "check": "evidence_not_license_statement",
+   "sec": 5.2
+  },
+  {
+   "name": "의존 패키지만 있음",
+   "category": "의존성 착각",
+   "file": "deps_only.py",
+   "expected": "UNKNOWN",
+   "got": "Unknown",
+   "pass": true,
+   "llm_choice": "Unknown",
+   "judged_by": "llm",
+   "check": "",
+   "sec": 3.4
+  },
+  {
+   "name": "Apache 패키지 import (Java)",
+   "category": "의존성 착각",
+   "file": "Deps.java",
+   "expected": "UNKNOWN",
+   "got": "Unknown",
+   "pass": true,
+   "llm_choice": "Unknown",
+   "judged_by": "llm",
+   "check": "",
+   "sec": 4.3
+  },
+  {
+   "name": "문자열 속 라이선스 이름",
+   "category": "문자열 속 이름",
+   "file": "strings.py",
+   "expected": "UNKNOWN",
+   "got": "Unknown",
+   "pass": true,
+   "llm_choice": "Apache-2.0 OR MIT",
+   "judged_by": "llm",
+   "check": "evidence_not_license_statement",
+   "sec": 6.7
+  },
+  {
+   "name": "버전 없는 GPL",
+   "category": "버전",
+   "file": "versionless.py",
+   "expected": "VERSIONLESS:GPL",
+   "got": "GPL",
+   "pass": true,
+   "llm_choice": "GPL-3.0-only",
+   "judged_by": "llm",
+   "check": "version_guess",
+   "sec": 3.8
+  },
+  {
+   "name": "없는 버전 Apache 3.0",
+   "category": "버전",
+   "file": "no_such_version.py",
+   "expected": "VERSIONLESS:Apache",
+   "got": "Apache",
+   "pass": true,
+   "llm_choice": "Apache-2.0",
+   "judged_by": "llm",
+   "check": "version_guess",
+   "sec": 4.4
+  },
+  {
+   "name": "GPL-2.0 only 헤더",
+   "category": "only / or-later",
+   "file": "gpl2_only.py",
+   "expected": "GPL-2.0-only",
+   "got": "GPL-2.0-only",
+   "pass": true,
+   "llm_choice": "GPL-2.0-only",
+   "judged_by": "llm",
+   "check": "",
+   "sec": 5.5
+  },
+  {
+   "name": "GPL-2.0 or later 헤더",
+   "category": "only / or-later",
+   "file": "gpl2_later.py",
+   "expected": "GPL-2.0-or-later",
+   "got": "GPL-2.0-or-later",
+   "pass": true,
+   "llm_choice": "GPL-2.0-or-later",
+   "judged_by": "llm",
+   "check": "",
+   "sec": 7.6
+  },
+  {
+   "name": "이중 라이선스",
+   "category": "이중 라이선스",
+   "file": "dual.py",
+   "expected": "Apache-2.0 OR MIT",
+   "got": "Apache-2.0 OR MIT",
+   "pass": true,
+   "llm_choice": "Apache-2.0 OR MIT",
+   "judged_by": "llm",
+   "check": "",
+   "sec": 5.9
+  },
+  {
+   "name": "MIT 헤더 (대조군)",
+   "category": "정상",
+   "file": "mit.py",
+   "expected": "MIT",
+   "got": "MIT",
+   "pass": true,
+   "llm_choice": "MIT",
+   "judged_by": "llm",
+   "check": "",
+   "sec": 3.3
+  },
+  {
+   "name": "SPDX 태그 (대조군)",
+   "category": "정상",
+   "file": "tagged.py",
+   "expected": "BSD-2-Clause",
+   "got": "BSD-2-Clause",
+   "pass": true,
+   "llm_choice": "",
+   "judged_by": "rule",
+   "check": "spdx_tag",
+   "sec": 0.0
+  },
+  {
+   "name": "BSD 2-Clause 문구",
+   "category": "정상",
+   "file": "bsd2.py",
+   "expected": "BSD-2-Clause",
+   "got": "BSD-2-Clause",
+   "pass": true,
+   "llm_choice": "BSD-2-Clause",
+   "judged_by": "llm",
+   "check": "",
+   "sec": 4.1
+  }
+ ],
+ "conflicts": [
+  {
+   "name": "허용형만",
+   "expected": [
+    "OK"
+   ],
+   "level": "OK",
+   "extra": {},
+   "pass": true,
+   "pairs": [
+    [
+     [
+      "BSD-3-Clause",
+      "ISC"
+     ],
+     "OK",
+     "OSADL"
+    ],
+    [
+     [
+      "BSD-3-Clause",
+      "MIT"
+     ],
+     "OK",
+     "OSADL"
+    ],
+    [
+     [
+      "ISC",
+      "MIT"
+     ],
+     "OK",
+     "OSADL"
+    ]
+   ],
+   "single": []
+  },
+  {
+   "name": "MIT + GPL-3.0",
+   "expected": [
+    "RISK"
+   ],
+   "level": "RISK",
+   "extra": {
+    "pair": [
+     [
+      "GPL-3.0-only",
+      "MIT"
+     ],
+     "RISK"
+    ]
+   },
+   "pass": true,
+   "pairs": [
+    [
+     [
+      "GPL-3.0-only",
+      "MIT"
+     ],
+     "RISK",
+     "OSADL"
+    ]
+   ],
+   "single": []
+  },
+  {
+   "name": "GPL-2.0-only + Apache-2.0",
+   "expected": [
+    "CONFLICT"
+   ],
+   "level": "CONFLICT",
+   "extra": {},
+   "pass": true,
+   "pairs": [
+    [
+     [
+      "Apache-2.0",
+      "GPL-2.0-only"
+     ],
+     "CONFLICT",
+     "OSADL"
+    ]
+   ],
+   "single": []
+  },
+  {
+   "name": "Classpath 예외 + Apache-2.0",
+   "expected": [
+    "CONFLICT"
+   ],
+   "level": "CONFLICT",
+   "extra": {},
+   "pass": true,
+   "pairs": [
+    [
+     [
+      "Apache-2.0",
+      "GPL-2.0-only WITH Classpath-exception-2.0"
+     ],
+     "CONFLICT",
+     "OSADL"
+    ]
+   ],
+   "single": []
+  },
+  {
+   "name": "Linux-syscall-note 예외 + Apache-2.0",
+   "expected": [
+    "REVIEW"
+   ],
+   "level": "REVIEW",
+   "extra": {},
+   "pass": true,
+   "pairs": [
+    [
+     [
+      "Apache-2.0",
+      "GPL-2.0-only WITH Linux-syscall-note"
+     ],
+     "REVIEW",
+     "OSADL"
+    ]
+   ],
+   "single": []
+  },
+  {
+   "name": "AFL-2.0 + AGPL-3.0 (판단 보류)",
+   "expected": [
+    "RISK"
+   ],
+   "level": "RISK",
+   "extra": {
+    "possible_conflict": true
+   },
+   "pass": true,
+   "pairs": [
+    [
+     [
+      "AFL-2.0",
+      "AGPL-3.0-only"
+     ],
+     "RISK",
+     "OSADL"
+    ]
+   ],
+   "single": []
+  },
+  {
+   "name": "CC0-1.0 + GPL-3.0 (계열 추정)",
+   "expected": [
+    "RISK"
+   ],
+   "level": "RISK",
+   "extra": {
+    "pair_source": "FAMILY"
+   },
+   "pass": true,
+   "pairs": [
+    [
+     [
+      "CC0-1.0",
+      "GPL-3.0-only"
+     ],
+     "RISK",
+     "FAMILY"
+    ]
+   ],
+   "single": []
+  },
+  {
+   "name": "CC-BY-NC-4.0 단독 (기타 계열)",
+   "expected": [
+    "REVIEW"
+   ],
+   "level": "REVIEW",
+   "extra": {},
+   "pass": true,
+   "pairs": [],
+   "single": [
+    [
+     "CC-BY-NC-4.0",
+     "REVIEW"
+    ]
+   ]
+  },
+  {
+   "name": "라이선스 없음",
+   "expected": [
+    "NOT_DETECTED"
+   ],
+   "level": "NOT_DETECTED",
+   "extra": {},
+   "pass": true,
+   "pairs": [],
+   "single": []
+  },
+  {
+   "name": "분석 못 한 .ts 포함",
+   "expected": [
+    "OK"
+   ],
+   "level": "OK",
+   "extra": {
+    "complete": false
+   },
+   "pass": true,
+   "pairs": [],
+   "single": []
+  },
+  {
+   "name": "버전 없는 GPL + Apache-2.0",
+   "expected": [
+    "REVIEW"
+   ],
+   "level": "REVIEW",
+   "extra": {},
+   "pass": true,
+   "pairs": [
+    [
+     [
+      "Apache-2.0",
+      "GPL"
+     ],
+     "REVIEW",
+     "OSADL"
+    ]
+   ],
+   "single": []
+  },
+  {
+   "name": "OSADL 에 없는 OFL-1.1 + MIT",
+   "expected": [
+    "RISK",
+    "REVIEW"
+   ],
+   "level": "REVIEW",
+   "extra": {
+    "pair_source": "LLM"
+   },
+   "pass": true,
+   "pairs": [
+    [
+     [
+      "MIT",
+      "OFL-1.1"
+     ],
+     "REVIEW",
+     "LLM"
+    ]
+   ],
+   "single": []
+  },
+  {
+   "name": "MIT OR Apache-2.0 + GPL-2.0-only",
+   "expected": [
+    "RISK"
+   ],
+   "level": "RISK",
+   "extra": {},
+   "pass": true,
+   "pairs": [
+    [
+     [
+      "GPL-2.0-only",
+      "MIT OR Apache-2.0"
+     ],
+     "RISK",
+     "OSADL"
+    ]
+   ],
+   "single": []
+  },
+  {
+   "name": "LICENSE 원문 Apache + GPL-2.0-only 태그",
+   "expected": [
+    "CONFLICT"
+   ],
+   "level": "CONFLICT",
+   "extra": {},
+   "pass": true,
+   "pairs": [
+    [
+     [
+      "Apache-2.0",
+      "GPL-2.0-only"
+     ],
+     "CONFLICT",
+     "OSADL"
+    ]
+   ],
+   "single": []
+  }
+ ]
+}

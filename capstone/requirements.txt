@@ -1,0 +1,30 @@
+# capstone 분석 엔진 - 팀원용 전체 의존성
+#
+# 설치:  pip install -r requirements.txt
+# Python 3.10 이상 필요 (작성자 환경: Python 3.14, Windows)
+#
+# 이 목록으로 엔진 실행, 정확도 측정(test_runner2.py), 하네스 시험(test_conflicts.py)까지 모두 동작한다.
+# 데이터(license_data/packages.sqlite3)는 생성된 파일을 받아 쓰므로 데이터 생성용 패키지는 필요 없다.
+
+# --- API 서버 ---
+fastapi
+uvicorn
+python-multipart        # 파일 업로드(UploadFile) 처리
+pydantic>=2             # LLM 출력 스키마 (FastAPI 와 함께 설치되지만 버전 2 이상이 필요해 명시)
+
+# --- LLM 호출 (로컬 Ollama), 측정·시험 스크립트 ---
+requests
+
+# --- import 추출용 파서 ---
+# 없으면 엔진이 오류 없이 정규식 방식으로 바뀌어 결과가 달라지므로 반드시 설치
+tree-sitter>=0.22
+tree-sitter-python
+tree-sitter-javascript
+tree-sitter-java
+tree-sitter-c
+
+# --- 라이선스 표현식 해석 (MIT OR Apache-2.0 등) ---
+license-expression
+
+# 외부 프로그램 (pip 아님)
+#   Ollama 0.5.0 이상 + 모델 qwen2.5-coder:7b   (설치 후: ollama pull qwen2.5-coder:7b)

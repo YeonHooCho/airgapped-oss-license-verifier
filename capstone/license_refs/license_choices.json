@@ -1,0 +1,127 @@
+{
+ "generated_at": "2026-10-26T01:17:29+00:00",
+ "coverage_target": 0.98,
+ "spdx_version": "3.29.0",
+ "per_registry": {
+  "pypi": {
+   "packages_total": 883612,
+   "packages_no_license": 165748,
+   "packages_by_status": {
+    "ok": 594684,
+    "unrecognized": 299,
+    "non_standard": 122881
+   },
+   "packages_normalized": 594684,
+   "selected": [
+    "MIT",
+    "Apache-2.0",
+    "GPL-3.0-only",
+    "AGPL-3.0-only",
+    "BSD-3-Clause",
+    "GPL-3.0-or-later",
+    "LGPL-3.0-only",
+    "GPL-2.0-only",
+    "AGPL-3.0-or-later",
+    "BSD-2-Clause",
+    "MPL-2.0",
+    "Apache-2.0 OR MIT",
+    "LGPL-3.0-or-later",
+    "Unlicense"
+   ],
+   "coverage_of_normalized": 0.9805
+  },
+  "npm": {
+   "packages_total": 12565986,
+   "packages_no_license": 938131,
+   "packages_by_status": {
+    "ok": 11427963,
+    "non_standard": 199892
+   },
+   "packages_normalized": 11427963,
+   "selected": [
+    "MIT",
+    "ISC",
+    "Apache-2.0",
+    "BSD-3-Clause",
+    "BSD-2-Clause",
+    "0BSD",
+    "GPL-3.0-only",
+    "BlueOak-1.0.0"
+   ],
+   "coverage_of_normalized": 0.9805
+  },
+  "maven": {
+   "packages_total": 925524,
+   "packages_no_license": 45658,
+   "packages_by_status": {
+    "ok": 743752,
+    "unrecognized": 7085,
+    "non_standard": 129029
+   },
+   "packages_normalized": 743752,
+   "selected": [
+    "Apache-2.0",
+    "MIT",
+    "GPL-3.0-only",
+    "BSD-3-Clause",
+    "LGPL-2.1-only",
+    "LGPL-3.0-only",
+    "AGPL-3.0-only",
+    "BSD-2-Clause"
+   ],
+   "coverage_of_normalized": 0.9811
+  }
+ },
+ "from_frequency": [
+  "MIT",
+  "Apache-2.0",
+  "GPL-3.0-only",
+  "AGPL-3.0-only",
+  "BSD-3-Clause",
+  "GPL-3.0-or-later",
+  "LGPL-3.0-only",
+  "GPL-2.0-only",
+  "AGPL-3.0-or-later",
+  "BSD-2-Clause",
+  "MPL-2.0",
+  "Apache-2.0 OR MIT",
+  "LGPL-3.0-or-later",
+  "Unlicense",
+  "ISC",
+  "0BSD",
+  "BlueOak-1.0.0",
+  "LGPL-2.1-only"
+ ],
+ "supplement": [
+  "GPL-2.0-or-later",
+  "LGPL-2.1-or-later",
+  "EPL-2.0",
+  "EUPL-1.2"
+ ],
+ "choices": [
+  "MIT",
+  "Apache-2.0",
+  "GPL-3.0-only",
+  "AGPL-3.0-only",
+  "BSD-3-Clause",
+  "GPL-3.0-or-later",
+  "LGPL-3.0-only",
+  "GPL-2.0-only",
+  "AGPL-3.0-or-later",
+  "BSD-2-Clause",
+  "MPL-2.0",
+  "Apache-2.0 OR MIT",
+  "LGPL-3.0-or-later",
+  "Unlicense",
+  "ISC",
+  "0BSD",
+  "BlueOak-1.0.0",
+  "LGPL-2.1-only",
+  "GPL-2.0-or-later",
+  "LGPL-2.1-or-later",
+  "EPL-2.0",
+  "EUPL-1.2",
+  "Unknown",
+  "Other"
+ ]
+}

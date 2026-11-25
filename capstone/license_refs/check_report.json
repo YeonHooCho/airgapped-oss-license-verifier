@@ -1,0 +1,158 @@
+{
+ "osadl_names": {
+  "n_osadl": 119,
+  "exact": 118,
+  "differs": [
+   {
+    "osadl": "bzip2-1.0.5",
+    "catalog": "bzip2-1.0.6",
+    "note": ""
+   }
+  ],
+  "missing": [],
+  "subordinate_only": []
+ },
+ "osadl_coverage": {
+  "by_registry": {
+   "maven": {
+    "packages_total": 925524,
+    "packages_normalized": 743752,
+    "covered_by_osadl": 741228,
+    "rate_of_total": 0.8009,
+    "rate_of_normalized": 0.9966
+   },
+   "npm": {
+    "packages_total": 12565986,
+    "packages_normalized": 11427963,
+    "covered_by_osadl": 11381318,
+    "rate_of_total": 0.9057,
+    "rate_of_normalized": 0.9959
+   },
+   "pypi": {
+    "packages_total": 883612,
+    "packages_normalized": 594684,
+    "covered_by_osadl": 590020,
+    "rate_of_total": 0.6677,
+    "rate_of_normalized": 0.9922
+   }
+  },
+  "total": {
+   "total": 14375122,
+   "covered": 12712566,
+   "normalized": 12766399
+  },
+  "top_missing": [
+   [
+    "CC0-1.0",
+    20020
+   ],
+   [
+    "OFL-1.1",
+    6810
+   ],
+   [
+    "CC-BY-3.0",
+    5453
+   ],
+   [
+    "CC-BY-NC-SA-4.0",
+    3824
+   ],
+   [
+    "CC-BY-4.0",
+    3705
+   ],
+   [
+    "BUSL-1.1",
+    3626
+   ],
+   [
+    "Elastic-2.0",
+    1590
+   ],
+   [
+    "PolyForm-Noncommercial-1.0.0",
+    1084
+   ],
+   [
+    "CC-BY-SA-4.0",
+    888
+   ],
+   [
+    "ZPL-2.1",
+    862
+   ],
+   [
+    "CC-BY-NC-4.0",
+    772
+   ],
+   [
+    "CC-BY-NC-ND-4.0",
+    570
+   ],
+   [
+    "MulanPSL-2.0",
+    476
+   ],
+   [
+    "CPAL-1.0",
+    449
+   ],
+   [
+    "BSD-3-Clause-Clear",
+    398
+   ],
+   [
+    "Beerware",
+    369
+   ],
+   [
+    "SSPL-1.0",
+    343
+   ],
+   [
+    "CC-BY-SA-3.0",
+    290
+   ],
+   [
+    "CC-BY-NC-ND-3.0",
+    230
+   ],
+   [
+    "CECILL-2.1",
+    224
+   ]
+  ]
+ },
+ "choices_vs_labels": {
+  "n_choices": 19,
+  "n_labels": 30,
+  "in_choices": 26,
+  "not_in_choices": [
+   {
+    "sample": "sample08",
+    "ground_truth": "Unlicense",
+    "in_choices": false,
+    "status": "ok"
+   },
+   {
+    "sample": "sample13",
+    "ground_truth": "BSD-2-Clause",
+    "in_choices": false,
+    "status": "ok"
+   },
+   {
+    "sample": "sample27",
+    "ground_truth": "BSD-2-Clause",
+    "in_choices": false,
+    "status": "ok"
+   },
+   {
+    "sample": "sample30",
+    "ground_truth": "Unlicense",
+    "in_choices": false,
+    "status": "ok"
+   }
+  ]
+ }
+}
